@@ -27,7 +27,43 @@ function calculPrixTTC(montantTaxe = 20, fraisDePort = 0) {
 
     const prixHT = parseFloat(prompt("Entrez un prix HT : "));
 
-    console.log((prixHT * (1 + (montantTaxe/100)) + fraisDePort).toFixed(2));
+    console.log("Prix TTC (FDP inclus) : " + (prixHT * (1 + (montantTaxe / 100)) + fraisDePort).toFixed(2));
 }
 
-calculPrixTTC(19.6, 5);
+//calculPrixTTC(19.6, 5);
+
+
+// Exercice 3 : température
+function celsiusToFahrenheit() {
+
+    const degresCelsius = parseFloat(prompt("Entrez une température en °C : "));
+
+    console.log("Température : " + (degresCelsius * 9 / 5 + 32).toFixed(2) + "°F");
+}
+
+//celsiusToFahrenheit();
+
+
+// Exercice 4 : IMC / POIDS
+function calculIMC() {
+
+    const poids = parseFloat(prompt("Entrez votre poids en kg : "));
+    const taille = parseFloat(prompt("Entrez votre taille en m : "));
+
+    console.log("IMC : " + (poids / (taille * taille)).toFixed(2));
+}
+
+//calculIMC();
+
+
+// Exercice 5 : permutation de valeur
+function permuterValeur(nb1 = 5, nb2 = 3) {
+
+    const tmp = nb1;
+    nb1 = nb2;
+    nb2 = tmp;
+
+    console.log("nb1 = " + nb1 + "\nnb2 = " + nb2);
+}
+
+permuterValeur();
