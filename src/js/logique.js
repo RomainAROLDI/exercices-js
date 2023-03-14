@@ -44,4 +44,20 @@ function decompte(nbSecondes = 3, messageDeFin = "Terminé !") {
     }, 1000);
 }
 
-decompte(10, "Décollage !");
+//decompte(10, "Décollage !");
+
+
+// Exercice 4 : Beau dessin
+function dessiner(caractere = "*") {
+
+    const nbEtages = parseInt(prompt("Entrez le nombre d'étages : "));
+
+    for (let i = 1; i <= nbEtages; i++) {
+        console.log(caractere.repeat(i));
+    }
+}
+
+dessiner();
+
+
+// Exercice 5 : Nombre premier
