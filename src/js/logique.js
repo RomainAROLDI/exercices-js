@@ -86,3 +86,21 @@ while (nbPremiers < 100) {
 }
 
 console.log("La somme des 100 premiers nombres premiers est : " + sommePremiers);
+
+
+// Exercice 6 : Factorielle
+function calculFactorielle() {
+
+    let nb = parseInt(prompt("Entrez un nombre : "));
+    let i = 1;
+    let res = 1;
+
+    while (i <= nb) {
+        res *= i;
+        i++;
+    }
+
+    console.log(res);
+}
+
+calculFactorielle();
