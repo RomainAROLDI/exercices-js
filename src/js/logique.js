@@ -61,3 +61,28 @@ dessiner();
 
 
 // Exercice 5 : Nombre premier
+function estPremier(n) {
+    if (n < 2) {
+        return false;
+    }
+    for (let i = 2; i <= Math.sqrt(n); i++) {
+        if (n % i === 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+let nbPremiers = 0;
+let sommePremiers = 0;
+let i = 2;
+while (nbPremiers < 100) {
+    if (estPremier(i)) {
+        console.log(i);
+        nbPremiers++;
+        sommePremiers += i;
+    }
+    i++;
+}
+
+console.log("La somme des 100 premiers nombres premiers est : " + sommePremiers);
