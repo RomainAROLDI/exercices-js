@@ -89,3 +89,29 @@ console.log(
     "ABS : " + (voiture.hasABS ? "Oui" : "Non") + "\n" +
     "Seconde option chromée : " + voiture.finition.chromes[1]
 );
+
+
+// Exercice 7 : tableaux
+const SF = ["Star Trek", "Timeless", "Another Life", "Love, Death and Robots"];
+const comedie = ["How I Met Your Mother", "The Big Bang Theory", "Norsemen", "Archer"];
+const anime = ["Rick & Morty", "Boruto", "Tokyo Ghoul", "Death Note"];
+
+const netflix = SF.concat(comedie, anime);
+console.log(netflix);
+
+console.log(SF);
+SF.splice(2, 0, "Star Wars", "Armageddon");
+console.log(SF);
+
+console.log(comedie);
+comedie.splice(2, 1, "Marié 2 enfants", "Notre belle famille");
+console.log(comedie);
+
+SF.push("Dune");
+console.log(SF);
+
+anime.unshift("L'attaque des titans");
+console.log(anime);
+
+anime.splice(anime.findIndex((value) => value === "Death Note"), 1);
+console.log(anime);
