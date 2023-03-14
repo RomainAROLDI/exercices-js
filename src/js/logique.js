@@ -16,7 +16,7 @@ function calculTarifDisneyland(tarif = 90) {
     const anneeDeNaissance = parseInt(prompt("Entrez votre année de naissance : "));
     const age = new Date().getFullYear() - anneeDeNaissance;
 
-    if (age  >= 70) {
+    if (age >= 70) {
         tarif *= 0.7;
     } else if (age <= 12) {
         tarif = 0;
@@ -27,4 +27,21 @@ function calculTarifDisneyland(tarif = 90) {
     console.log(tarif);
 }
 
-calculTarifDisneyland();
+//calculTarifDisneyland();
+
+
+// Exercice 3 : Décompte
+function decompte(nbSecondes = 3, messageDeFin = "Terminé !") {
+
+    const interval = setInterval(() => {
+        if (nbSecondes === 0) {
+            clearInterval(interval);
+            console.log(messageDeFin);
+        } else {
+            console.log(nbSecondes);
+            nbSecondes--;
+        }
+    }, 1000);
+}
+
+decompte(10, "Décollage !");
