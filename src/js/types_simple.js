@@ -19,4 +19,15 @@ function calculSimple() {
     );
 }
 
-calculSimple();
+//calculSimple();
+
+
+// Exercice 2 : prix final
+function calculPrixTTC(montantTaxe = 20, fraisDePort = 0) {
+
+    const prixHT = parseFloat(prompt("Entrez un prix HT : "));
+
+    console.log((prixHT * (1 + (montantTaxe/100)) + fraisDePort).toFixed(2));
+}
+
+calculPrixTTC(19.6, 5);
