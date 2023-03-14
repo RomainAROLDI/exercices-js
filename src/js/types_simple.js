@@ -66,4 +66,26 @@ function permuterValeur(nb1 = 5, nb2 = 3) {
     console.log("nb1 = " + nb1 + "\nnb2 = " + nb2);
 }
 
-permuterValeur();
+//permuterValeur();
+
+
+// Exercice 6 : la voiture
+const voiture = {
+    marque: "Volkswagen",
+    modele: "Polo IV",
+    hasABS: true,
+    finition: {
+        couleur: "Noir",
+        option: "",
+        chromes: ["Rétroviseurs", "Poignées portières"]
+    },
+    kilometrage: 220000
+}
+
+console.log(
+    "--- Voiture " + voiture.marque + " " + voiture.modele + " ---\n" +
+    "Couleur de finition : " + voiture.finition.couleur + "\n" +
+    "Kilométrage : " + voiture.kilometrage.toString() + "kms\n" +
+    "ABS : " + (voiture.hasABS ? "Oui" : "Non") + "\n" +
+    "Seconde option chromée : " + voiture.finition.chromes[1]
+);
