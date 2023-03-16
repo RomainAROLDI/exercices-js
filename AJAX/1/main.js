@@ -7,5 +7,5 @@ setTimeout(() => {
                 container.innerHTML = "<p>" + data.replaceAll("\n", "<br>") + "</p>";
             });
         }
-    });
+    }).catch(error => console.log(error));
 }, 15000);
